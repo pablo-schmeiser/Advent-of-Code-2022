@@ -11,7 +11,7 @@ int main() {
 
     if (myfile.is_open()) {
         priority_queue<int> q;
-        int32_t sum = 0;
+        int_fast32_t sum = 0;
         // Read the file line by line
         while (getline(myfile, line)) {
             // Check for next elf
@@ -26,7 +26,7 @@ int main() {
         }
         // Clear the sum variable to reuse it
         sum = 0;
-        for (int i = 0; i < 3; i++) {
+        for (int_fast32_t i = 0; i < 3; i++) {
             sum += q.top();
             q.pop();
         }
