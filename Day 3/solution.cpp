@@ -36,7 +36,7 @@ int solutionOne() {
         cout << sum << endl;
         myfile.close();
     } else {
-        cout << "Unable to open file";
+        cout << "Unable to open file" << endl;
     }
 }
 
